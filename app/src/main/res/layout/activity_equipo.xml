@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".login">
+
+    <EditText android:id="@+id/txtMac"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Mac"
+        android:inputType="textEmailAddress" />
+
+    <EditText android:id="@+id/txtIp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Ip"
+        android:inputType="number" />
+
+    <EditText android:id="@+id/txtDescripcion"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:hint="Descripción"
+        android:inputType="text"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="30dip" />
+
+
+    <Button android:id="@+id/btnRegistroEquipo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Registrar equipo"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:onClick="insertar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar"
+        android:id="@+id/btnMostrar"
+        android:layout_gravity="center_horizontal"
+        android:onClick="obtener" />
+
+</LinearLayout>
+
